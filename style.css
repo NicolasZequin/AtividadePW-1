@@ -1,0 +1,105 @@
+body{
+ background-color: rgb(255, 255, 255);
+ display: flex;
+ flex-wrap: wrap;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+}
+.img_logo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.tabela {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border: 2px solid black;
+    position: absolute;
+    top: 150px;
+}
+.linha {
+    display: flex;
+    border: 1px solid black;
+}
+.linha1 {
+    display: flex;
+    border: 1px solid black;
+    background-color: rgb(230, 229, 229);
+}
+.coluna {
+    flex: 1;
+    border: 1px solid black;
+    text-align: center;
+}
+.titulo_tabela {
+    flex: 2;
+    background-color: #28bbc5;
+}
+header{
+    background-color: #187c83;
+    width: 2160px;
+    height: 120px;
+}
+.interacao{
+    margin: 0 auto;
+    position: relative;
+    top: 400px;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+.botoesss{
+    display: flex;
+    height: 400px;
+    width: 2000px;
+    transition: transform 0.5s ease-in-out;
+}
+.interacao input{
+    display: none;
+}
+.i{
+    flex: 0 0 400px;
+    position: relative;
+}
+.i img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+.troca_img{
+    position: absolute;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    bottom: 10px;
+}
+.troca{
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    transition: 1s;
+}
+.troca:not(:last-child){
+    margin-right: 10px;
+}
+.troca:hover{
+    background-color: #fff;
+}
+#bt1:checked ~ .botoesss{
+    transform: translateX(0);
+}
+#bt2:checked ~ .botoesss{
+    transform: translateX(-400px);
+}
+#bt3:checked ~ .botoesss{
+    transform: translateX(-800px);
+}
+#bt4:checked ~ .botoesss{
+    transform: translateX(-1200px);
+}
+#bt5:checked ~ .botoesss{
+    transform: translateX(-1600px);
+}
